@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Boxes</title>
+    <style>
+        .box1 {
+            height: 50px;
+            width: 100%;
+            background-color: aquamarine;
+        }
+
+        .box2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 50px;
+            width: 100%;
+            gap: 10px;
+            background-color: bisque;
+        }
+        .box01,.box02{
+            background-color: azure;            
+        }
+        .box3{
+            display: grid;
+            height: 50px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            background-color: red;
+        }
+        .box31,.box32,.box33{
+            background-color: blueviolet;
+        }
+        .box4{
+            background-color: black;
+            height: 50px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1"></div>
+    <div class="box2">
+        <div class="box01"></div>
+        <div class="box02"></div>
+    </div>
+    <div class="box3">
+        <div class="box31"></div>
+        <div class="box32"></div>
+        <div class="box33"></div>
+    </div>
+    <div class="box4"></div>
+
+</body>
+
+</html>

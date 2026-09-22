@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            border: 2px solid red;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 10px;
+        }
+
+        .box2 {
+            /* background-color: aqua; */
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            padding: 10px;
+            border: 2px solid rebeccapurple;
+            padding: 10px;
+            margin: 10px 10px;
+        }
+
+        .box01,
+        .box02 {
+            /* background-color: beige; */
+            border: 2px solid green;
+            padding: 10px;
+        }
+
+        .box2 ul {
+            list-style: none;
+        }
+
+        .box3 {
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 10px;
+           
+        }
+        .box03{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            
+
+        }
+
+        img {
+            height: 150px;
+            width: 100%;
+            border-radius: 30px;
+        }
+        .box4{
+            text-align: center;
+            border: 2px solid yellow;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <h1>welcome to revature</h1>
+    </div>
+    <div class="box2">
+        <div class="box01">
+            <p>Revature is a service based company, providing consulting and training and placements services by
+                bridging the gap between students and it industry</p>
+
+        </div>
+        <div class="box02">
+            <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>careers</li>
+                <li>services</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="box03">
+            <img src="https://img.magnific.com/premium-photo/dark-style-ninja-naruto_1298309-37649.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="">
+            <img src="https://img.magnific.com/premium-photo/dark-style-ninja-naruto_1298309-37649.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="">
+            <img src="https://img.magnific.com/premium-photo/dark-style-ninja-naruto_1298309-37649.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="">
+        </div>
+    </div>
+    <div class="box4">
+        developer by the great software developer team 2026
+    </div>
+
+</body>
+
+</html>

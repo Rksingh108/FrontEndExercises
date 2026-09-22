@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .heading{
+            margin-top: 20px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .boxleft{
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-evenly; */
+            /* gap: 30px; */
+            justify-content: left;
+            
+        }
+        .boxcenter{
+            border: 1px solid green;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            flex-direction: column;
+        }
+        .boxright{
+            border: 1px solid blue;
+            display: flex;
+            justify-content: right;
+            flex-direction: column;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Welcome to courses</h1>
+        <main class="box">
+            <section class="boxleft">
+                <h3 class="boxheading">Java FSD</h3>
+                <p class="content">
+                    <strong>Tech stack : </strong>
+                    java, spring, hibernate, html
+
+                </p>
+                <p>
+                    <strong>Price : </strong>45000
+                </p>
+            </section>
+            <section class="boxright">
+                <h3 class="boxheading">AIML</h3>
+                <p class="content">
+                    <strong>Tech stack : </strong>
+                    Gen AI, Python, Machine Learning
+
+                </p>
+                <p>
+                    <strong>Price : </strong>35000
+                </p>
+            </section>
+            <section class="boxcenter">
+                <h3 class="boxheading">Bonus</h3>
+                <p class="content">
+                    <strong>Tech stack : </strong>
+                    DevOps and Robotics
+
+                </p>
+                <p>
+                    <strong>Price : </strong>Free
+                </p>
+            </section>
+            <section class="boxleft">
+                <h3 class="boxheading">.NET FSD</h3>
+                <p class="content">
+                    <strong>Tech stack : </strong>
+                    c#, ASP, ADO
+
+                </p>
+                <p>
+                    <strong>Price : </strong>30000
+                </p>
+            </section>
+            <section class="boxright">
+                <h3 class="boxheading">UI/UX</h3>
+                <p class="content">
+                    <strong>Tech stack : </strong>
+                    HTML, CSS, JS, REACT.JS
+
+                </p>
+                <p>
+                    <strong>Price : </strong>50000
+                </p>
+            </section>
+        </main>
+</body>
+</html>
