@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test two</title>
+</head>
+
+<body>
+    <button class="add">+</button>
+    <p class="content"></p>
+    <button class="sub">-</button>
+
+    <script>
+        const add = document.querySelector(".add");
+        const sub = document.querySelector(".sub");
+        let content = document.querySelector(".content");
+
+
+        add.addEventListener("click", (e) => {
+            content.textContent = e;
+            e++;
+        })
+        sub.addEventListener("click", (e) => {
+            content.textContent = e;
+            e--;
+        })
+
+
+    </script>
+
+</body>
+
+</html>
