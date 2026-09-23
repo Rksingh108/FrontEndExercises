@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormUsingDom</title>
+</head>
+
+<body>
+
+    <script>
+        let body = document.querySelector("body")
+        let h1 = document.createElement("h1")
+        let label1 = document.createElement("label")
+        let label2 = document.createElement("label")
+        let input1 = document.createElement("input")
+        let input2 = document.createElement("input")
+        let button1 = document.createElement("button")
+        let button2 = document.createElement("button")
+
+        let br = document.createElement("br")
+
+        h1.innerHTML = "Welcome to Dom"
+        label1.textContent = "Username"
+
+        button1.textContent = "login"
+        button2.textContent = "Signup"
+
+        body.insertAdjacentElement("beforebegin", h1)
+        body.insertAdjacentElement("beforebegin", label1)
+        body.insertAdjacentElement("beforebegin",input1)
+        body.insertAdjacentElement("beforebegin",br) 
+        body.insertAdjacentElement("beforebegin",br)        
+        body.insertAdjacentElement("beforebegin", label2)
+        body.insertAdjacentElement("beforebegin",input2)
+        label2.textContent = "password"
+        body.insertAdjacentElement("afterend",button1)
+        body.insertAdjacentElement("afterend",button2)
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
